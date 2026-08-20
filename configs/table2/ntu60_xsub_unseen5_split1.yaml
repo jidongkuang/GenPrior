@@ -1,0 +1,65 @@
+# Experiment setup
+seed: 1
+
+# Output
+output_dir: outputs/table2/ntu60_xsub_unseen5_split1
+
+# dataset
+split_name: ntu60_xsub_seen55_unseen5_sa_dvae_split1
+
+# Skeleton encoder
+num_seen_classes: 55
+num_point: 25
+num_person: 2
+graph: genprior.graph.ntu_rgb_d.Graph
+graph_args:
+  labeling_mode: 'spatial'
+
+# Cross-modal VAE alignment
+skeleton_feature_dim: 256
+latent_dim: 768
+text_feature_dim: 1536
+distribution_alignment_weight: 0.1
+
+# Generated-motion prior (disabled for this protocol)
+use_generated_motion_prior: false
+use_dispersion_gate: false
+dispersion_gate_mode: full
+prior_fusion_weight: 0.0
+
+# Text encoder
+text_encoder_name_or_path: openai/clip-vit-large-patch14-336
+clip_backend: hf
+
+# optimization
+lr: 1.0e-4
+weight_decay: 0.01
+
+# Training
+training_steps: 1000
+train_batch_size: 64
+eval_batch_size: 64
+log_interval: 10
+eval_interval: 10
+
+# Generative Prototype Refinement (GPR)
+use_gpr: true
+gpr_support_ratio: 0.4
+prediction_space: visual
+diagnostic_heads: false
+
+# feeder
+feeder: genprior.data.ntu.Feeder
+feature_path: skeleton_features/sa_dvae_features/ntu60_seen55_unseen5_split1.npz
+num_workers: 32
+
+# semantics data path
+semantic_dir: semantics
+max_text_length: 60
+semantic_neighbor_count: 2
+semantic_neighbor_weights: [0.6, 0.6]
+
+# GZSL
+calibration_factor: 0.5
+
+setting: ZSL

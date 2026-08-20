@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Native/CUDA build products
+build/
+dist/
+*.o
+*.so
+*.a
+*.egg
+
+# Experiment outputs
+/output/
+/outputs/
+/logs/
+/runs/
+/results/
+/wandb/
+/tensorboard/
+*.log
+
+# Large datasets, features, and checkpoints
+/data/
+/skeleton_features/
+/checkpoints/
+/pretrain_skeleton/save_models/
+/clip-vit-*/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.pkl
+*.pickle
+*.h5
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Notebook and editor artifacts
+.ipynb_checkpoints/
+*.ipynb
+*~
+.DS_Store
+__MACOSX/
