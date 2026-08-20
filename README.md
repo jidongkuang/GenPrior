@@ -13,17 +13,17 @@
 <p><strong>ACM Multimedia 2026 (ACM MM '26)</strong></p>
 
 <p>
-  <a href="https://jidongkuang.github.io/projects/GenPrior/">
+  <a href="https://jidongkuang.github.io/projects/GenPrior/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Project-Page-2c5aa0.svg?style=flat&logo=googlechrome&logoColor=white" alt="Project Page">
   </a>
-  <a href="https://arxiv.org/abs/2608.02236">
+  <a href="https://arxiv.org/abs/2608.02236" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/arXiv-2608.02236-b31b1b.svg?logo=arxiv" alt="arXiv">
   </a>
   <img src="https://img.shields.io/badge/ACM%20MM-2026-0085CA.svg" alt="ACM MM 2026">
-  <a href="paper/GenPrior.pdf">
+  <a href="paper/GenPrior.pdf" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Paper-Camera--ready-4c8bf5.svg" alt="Camera-ready paper">
   </a>
-  <a href="https://github.com/jidongkuang/GenPrior/stargazers">
+  <a href="https://github.com/jidongkuang/GenPrior/stargazers" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/github/stars/jidongkuang/GenPrior?style=flat" alt="GitHub stars">
   </a>
 </p>
@@ -224,12 +224,13 @@ each split.
 We sincerely thank the authors of the following projects for their valuable
 open-source contributions:
 
-- [Flora](https://github.com/cseeyangchen/Flora)
-- [SynSE](https://github.com/skelemoa/synse-zsl)
-- [StableMoFusion](https://github.com/Linketic/StableMoFusion)
+- <a href="https://github.com/cseeyangchen/Flora" target="_blank" rel="noopener noreferrer">Flora</a>
+- <a href="https://github.com/skelemoa/synse-zsl" target="_blank" rel="noopener noreferrer">SynSE</a>
+- <a href="https://github.com/Linketic/StableMoFusion" target="_blank" rel="noopener noreferrer">StableMoFusion</a>
 
 This repository also builds upon
-[Shift-GCN](https://github.com/kchengiva/Shift-GCN) and CLIP. The adapted
+<a href="https://github.com/kchengiva/Shift-GCN" target="_blank" rel="noopener noreferrer">Shift-GCN</a>
+and CLIP. The adapted
 Shift-GCN files retain the upstream CC BY-NC 4.0 license; further third-party
 attribution is provided in [NOTICE.md](NOTICE.md).
 
