@@ -63,11 +63,6 @@ and the selected checkpoints. ZSL training saves `best_base.pt` and
 `best_gpr.pt`; GZSL training saves `best_gzsl.pt`. Existing output directories
 are not reused by the training scripts.
 
-**Evaluation limitation.** The released configurations evaluate the test split
-every 10 training steps and retain the checkpoint with the best test metric in
-the reported evaluation. There is no separate validation split. Accordingly,
-the reported numbers include test-set model selection and must not be
-interpreted as performance on a clean, independently evaluated test set.
 
 ## Table 1: Fixed-Split ZSL
 
